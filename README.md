@@ -1,4 +1,7 @@
-object-inspector
+##Repositori Halaman Statik
 ================
-code to inspect javascript object
-no more info
+
+Selebihnya belum di persiapkan
+
+
+[Terima kasih](http://ettoavi.github.io/isrc/)
