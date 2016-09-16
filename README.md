@@ -4,7 +4,7 @@ Format akses selalu berbentuk https://{username}.github.io/{branch}/{file yg mau
 
 contohnya : <br/> 
 1. [https://ettoavi.github.io/src](https://ettoavi.github.io/src/) (halaman root) <br/>
-2. [https://ettoavi.github.io/src/jquery.tipsy.js](https://ettoavi.github.io/kp-elite-js/jquery.tipsy.js) (akses file jquery.tipsy.js)
+2. [https://ettoavi.github.io/src/easing.js](https://ettoavi.github.io/isrc/easing.js) (akses file jquery.tipsy.js)
  
 
 Selebihnya belum di persiapkan
