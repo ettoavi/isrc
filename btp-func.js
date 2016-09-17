@@ -1,3 +1,5 @@
+// Originali specialized for BTP blog
+
 var btp = {
     post0: function () {
         dataFetcher.getAsimageCycler({
