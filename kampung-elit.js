@@ -460,7 +460,7 @@ var $sys = {
                     e += "<li>";
                     for (var c = t.feed.entry[a], d = 0; d < c.link.length; d++) "alternate" == c.link[d].rel && (n = c.link[d].href);
                     for (var g = 0; g < c.author.length; g++) s = c.author[g].name.$t, r = c.author[g].gd$image.src;
-                    r = -1 != r.indexOf("/s1600/") ? r.replace("/s1600/", "/s" + i.avatarSize + "-c/") : -1 != r.indexOf("/s220/") ? r.replace("/s220/", "/s" + i.avatarSize + "-c/") : -1 != r.indexOf("/s512-c/") && 0 != r.indexOf("http:") ? "http:" + r.replace("/s512-c/", "/s" + i.avatarSize + "-c/") : -1 != r.indexOf("blogblog.com/img/b16-rounded.gif") ? "http://3.bp.blogspot.com/-AaI8-1X32ZM/TxMKLVzQ5BI/AAAAAAAABYY/QYau8ov2blE/s" + i.avatarSize + "/Uj_blogger_logo.png" : -1 != r.indexOf("blogblog.com/img/openid16-rounded.gif") ? "http://3.bp.blogspot.com/-9lSeVyNRKx0/TxMKMIqMNuI/AAAAAAAABYc/8iasY0xpLzc/s" + i.avatarSize + "/Uj_openid_logo.png" : -1 != r.indexOf("blogblog.com/img/blank.gif") ? -1 != i.defaultAvatar.indexOf("gravatar.com") ? i.defaultAvatar + "&s=" + i.avatarSize : i.defaultAvatar : r, 1 == i.showAvatar && (o = 1 == i.roundAvatar ? "avatarRound" : "", e += '<div class="avatarImage ' + o + '"><img class="' + o + '" src="' + r + '" alt="' + s + '" width="' + i.avatarSize + '" height="' + i.avatarSize + '"/></div>'), e += '<a href="' + n + '">' + s + "</a>";
+                    r = -1 != r.indexOf("/s1600/") ? r.replace("/s1600/", "/s" + i.avatarSize + "-c/") : -1 != r.indexOf("/s220/") ? r.replace("/s220/", "/s" + i.avatarSize + "-c/") : -1 != r.indexOf("/s512-c/") && 0 != r.indexOf("https:") ? "https:" + r.replace("/s512-c/", "/s" + i.avatarSize + "-c/") : -1 != r.indexOf("blogblog.com/img/b16-rounded.gif") ? "https://3.bp.blogspot.com/-AaI8-1X32ZM/TxMKLVzQ5BI/AAAAAAAABYY/QYau8ov2blE/s" + i.avatarSize + "/Uj_blogger_logo.png" : -1 != r.indexOf("blogblog.com/img/openid16-rounded.gif") ? "https://3.bp.blogspot.com/-9lSeVyNRKx0/TxMKMIqMNuI/AAAAAAAABYc/8iasY0xpLzc/s" + i.avatarSize + "/Uj_openid_logo.png" : -1 != r.indexOf("blogblog.com/img/blank.gif") ? -1 != i.defaultAvatar.indexOf("gravatar.com") ? i.defaultAvatar + "&s=" + i.avatarSize : i.defaultAvatar : r, 1 == i.showAvatar && (o = 1 == i.roundAvatar ? "avatarRound" : "", e += '<div class="avatarImage ' + o + '"><img class="' + o + '" src="' + r + '" alt="' + s + '" width="' + i.avatarSize + '" height="' + i.avatarSize + '"/></div>'), e += '<a href="' + n + '">' + s + "</a>";
                     var u = c.content.$t,
                         m = u.replace(/(<([^>]+)>)/gi, "");
                     "" != m && m.length > i.characters ? (m = m.substring(0, i.characters), m += "&hellip;", 1 == i.showMorelink && (m += '<a href="' + n + '">' + i.moreLinktext + "</a>")) : m = m, e += "<span>" + m + "</span>", e += "</li>"
@@ -474,7 +474,7 @@ var $sys = {
                     numComments: 5,
                     avatarSize: 60,
                     characters: 40,
-                    defaultAvatar: "http://img1.blogblog.com/img/anon36.png",
+                    defaultAvatar: "https://img1.blogblog.com/img/anon36.png",
                     moreLinktext: " More &raquo;",
                     showAvatar: !0,
                     showMorelink: !1,
@@ -496,7 +496,7 @@ var $sys = {
             else {
                 var c = "",
                     d = o.getElementsByTagName("img");
-                d.length <= 1 ? (s = dataFetcher.getImageUrl(l), "" == s && (s = "http://3.bp.blogspot.com/-JeIJSL3H3dY/Uf1P4Nt7oGI/AAAAAAAAAVQ/ZqSPbWifCuM/s1600/no+image.jpg")) : s = d[0].src, c = '<div class="post-thumbnail" style="height:300px;overflow:hidden;"><a href="' + r + '"><div class="shadow"><span class="icon-link"></span></div><div style="position:relative;top:-50px"><img class="thumbnail" src="' + s + '" style="width:660px;height:auto;"></div></a></div>';
+                d.length <= 1 ? (s = dataFetcher.getImageUrl(l), "" == s && (s = "https://3.bp.blogspot.com/-JeIJSL3H3dY/Uf1P4Nt7oGI/AAAAAAAAAVQ/ZqSPbWifCuM/s1600/no+image.jpg")) : s = d[0].src, c = '<div class="post-thumbnail" style="height:300px;overflow:hidden;"><a href="' + r + '"><div class="shadow"><span class="icon-link"></span></div><div style="position:relative;top:-50px"><img class="thumbnail" src="' + s + '" style="width:660px;height:auto;"></div></a></div>';
                 var g = c + '<div class="article-container"><div class="article-content"><div class="article-category" ><span class=\'updated\'>' + i + "</span> / " + n + '</div><div class="clear"></div><h2 class="article-title" itemprop=\'entry-title\'><a href="' + r + '">' + e + "</a></h2><p>" + stripHtmlTags(l, summary) + "... </p></div></div></div>";
                 o.innerHTML = g, o.style.display = "block"
             }
@@ -511,7 +511,7 @@ var $sys = {
             e = $.extend({}, e, t);
             var a = Math.floor(e.height / 2) - 20,
                 i = "<div id='" + e.place.substring(1) + "_container' style='position: relative; width:" + e.width + "px;height:" + e.height + "px; overflow: hidden;'>\n";
-            return i += "<div style='position: absolute; top: 0px; left: 0px;' u='loading'>\n", i += "<div style='filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;'>\n", i += "</div>\n", i += "<div style='position: absolute; display: block; background: url(http://3.bp.blogspot.com/-572ZjF0a3nQ/VIpU9P4VVNI/AAAAAAAAElk/GVwBR9W0btY/s1600/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;'>\n", i += "</div>\n", i += "</div>\n", i += "<div id='" + e.place.substring(1) + "_slide' style='cursor: move; position: absolute; left: 0px; top: 0px; width:" + e.width + "px;height:" + e.height + "px;overflow: hidden;' u='slides'></div>\n", i += "<div class='jssorb01' style='position: absolute; bottom: 7px; right: 500px; width: 12px; height: 12px;' u='navigator'>\n", i += "<div style='POSITION: absolute; WIDTH: 12px; HEIGHT: 12px; left: 0px; top: 0px;' u='prototype'></div></div>\n", i += "<span class='jssora05l' style='width: 40px; height: 40px; top: " + a.toString() + "px; left: 8px;' u='arrowleft'></span>\n", i += "<span class='jssora05r' style='width: 40px; height: 40px; top: " + a.toString() + "px; right: 10px' u='arrowright'></span>\n", {
+            return i += "<div style='position: absolute; top: 0px; left: 0px;' u='loading'>\n", i += "<div style='filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;'>\n", i += "</div>\n", i += "<div style='position: absolute; display: block; background: url(https://3.bp.blogspot.com/-572ZjF0a3nQ/VIpU9P4VVNI/AAAAAAAAElk/GVwBR9W0btY/s1600/loading.gif) no-repeat center center;top: 0px; left: 0px;width: 100%;height:100%;'>\n", i += "</div>\n", i += "</div>\n", i += "<div id='" + e.place.substring(1) + "_slide' style='cursor: move; position: absolute; left: 0px; top: 0px; width:" + e.width + "px;height:" + e.height + "px;overflow: hidden;' u='slides'></div>\n", i += "<div class='jssorb01' style='position: absolute; bottom: 7px; right: 500px; width: 12px; height: 12px;' u='navigator'>\n", i += "<div style='POSITION: absolute; WIDTH: 12px; HEIGHT: 12px; left: 0px; top: 0px;' u='prototype'></div></div>\n", i += "<span class='jssora05l' style='width: 40px; height: 40px; top: " + a.toString() + "px; left: 8px;' u='arrowleft'></span>\n", i += "<span class='jssora05r' style='width: 40px; height: 40px; top: " + a.toString() + "px; right: 10px' u='arrowright'></span>\n", {
                 div: $(e.place).html(i),
                 place: "#" + e.place.substring(1) + "_container",
                 slider: "#" + e.place.substring(1) + "_slide"
@@ -536,7 +536,7 @@ var $sys = {
                 var e = t || {},
                     a = e.url_blog || window.location.host,
                     i = e.id_labelcontent || "#ujLab";
-                $.get("http://" + a + "/feeds/posts/summary?max-results=0&alt=json-in-script", function(t) {
+                $.get("https://" + a + "/feeds/posts/summary?max-results=0&alt=json-in-script", function(t) {
                     var e = t.feed.category,
                         a = "";
                     if (void 0 !== e) {
@@ -1059,7 +1059,7 @@ MasterElement.configSchema.listproduk = {
         e.element.html(e.textContent)
     }
 }, MasterElement.configSchema.pagepost = {
-    url: "http://hobby-ku.blogspot.com/",
+    url: "https://hobby-ku.blogspot.com/",
     sortByLabel: !1,
     postPerPage: 10,
     callBack: function(t, e, a, i, n, s, r, o, l) {
