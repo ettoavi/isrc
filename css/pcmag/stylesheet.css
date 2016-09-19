@@ -587,7 +587,7 @@ a.captionOrange:hover{color:#eb5100;text-decoration:underline;background-color:#
 .jssorb01 div:hover,.jssorb01 .av:hover { background-color: #d3d3d3;}
 .jssorb01 .av { background-color: #fff;}
 .jssorb01.dn,.jssorb01 .dn:hover { background-color: #555555;}
-.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn {position: absolute;cursor: pointer;display: block;background: url(http://3.bp.blogspot.com/-AB3uo2zDv7U/VIpUUMHiLmI/AAAAAAAAElc/qPsBHuKMn2c/s1600/a17.png)no-repeat;overflow:hidden;}
+.jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn {position: absolute;cursor: pointer;display: block;background: url(https://ettoavi.github.io/isrc/images/a17.png)no-repeat;overflow:hidden;}
 .jssora05l { background-position: -10px -40px; }
 .jssora05r { background-position: -70px -40px; }
 .jssora05l:hover { background-position: -130px -40px; }
